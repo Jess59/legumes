@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: teal;/*background color for the body*/
+    display: flex; /*allow to use */
+    justify-content: center; /**/
+    align-items: center; /**/
+    height: 100vh; /**/
+}
+
+section {
+    width: 600px;
+    height: 600px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap; /*wrap permett de mettre reour à la ligne grace à ça on va pouvoir mettre 3  3 3*/
+}
+
+section div {
+    width: 200px;
+    height: 200px;
+   /* border: 2px solid purple; */
+    overflow: hidden;/*masque les éléments qui dépassent*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section div nav ul {
+    list-style: none;
+}
+
+section nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;/*va créer un espace entre les lettres interlettrage*/
+    color:black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section div.up:hover img{ 
+    transform: translateY(-90%); 
+    transition: 0.5s;
+}
+
+.right:hover img{
+    transform: translateX(90%);
+    transition: 0.5s;
+}
+
+.down:hover img{
+    transform: translateY(90%);
+    transition: 0.5s;
+}
+
+.left:hover img{
+    transform: translateX(-90%);
+    transition: 0.5s;
+}

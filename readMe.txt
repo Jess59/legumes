@@ -8,6 +8,6 @@ Instructor:
 
 Audrey Lalère
 
-Training Center / Centre de Formation:
+Training Center :
 
 desCodeuses Roubaix, France
